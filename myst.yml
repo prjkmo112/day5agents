@@ -2,8 +2,8 @@
 version: 1
 project:
   id: 98cd9ffe-5751-4619-b4e1-8df02934ab79
-  # title:
-  # description:
+  title: day5agents
+  description: A hands-on tutorial project exploring Google's Agent Development Kit (ADK) for building AI agents with Python, based on https://www.kaggle.com/learn-guide/5-day-agents
   # keywords: []
   # authors: []
   # github:

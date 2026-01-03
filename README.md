@@ -1,35 +1,15 @@
-https://www.kaggle.com/learn-guide/5-day-agents
+Reference - https://www.kaggle.com/learn-guide/5-day-agents
+
+Note - https://prjkmo112.github.io/day5agents/
 
 ---
-# Google 5 Day Agents
+# Google 5 Day Agents Challenge
 ## Day 1
 
 ### First Agent with ADK
 #### Source Code
 - [Kaggle Link](https://www.kaggle.com/code/kaggle5daysofai/day-1a-from-prompt-to-action)
 - [Local Ipynb](./day1/day1a-single-agent.ipynb)
-
-#### Code Explaination
-1. Define Agent  
-    **_`google.adk.agents.Agent` Class_**
-    - name : 에이전트 이름
-    - model : 모델 구성 (`google.adk.models.~` 하단의 model 관련 class 객체)
-    - instruction : 에이전트의 역할과 사용법을 명시. 멀티 에이전트인 경우 매우 중요한 속성이 될 수 있음
-    - tools : 에이전트가 사용할 도구 (기타 에이전트, 외부 API 등)
-    - output_key : 에이전트의 출력 결과를 저장할 key. 주로 멀티 에이전트에서 에이전트끼리 구분하기 위해 사용함
-2. Run Agent
-
-#### CLI
-1. Create agent
-```bash
-export GOOGLE_API_KEY=<YOUR_API_KEY>
-adk create day1/sample_agent --model gemini-2.5-flash-lite --api_key $GOOGLE_API_KEY
-```
-
-2. Run agent on web
-```bash
-adk web day1
-```
 
 ### Multi-Agent Systems & Workflow Pattern
 
@@ -44,3 +24,59 @@ adk web day1
 #### Source Code
 - [Kaggle Link](https://www.kaggle.com/code/kaggle5daysofai/day-1b-agent-architectures)
 - [Local Ipynb](./day1/day1b-multi-agent.ipynb)
+
+# How to use Google ADK
+
+## CLI
+1. Create agent
+```bash
+export GOOGLE_API_KEY=<YOUR_API_KEY>
+adk create day1/sample_agent --model gemini-2.5-flash-lite --api_key $GOOGLE_API_KEY
+```
+
+2. Run agent on web
+```bash
+adk web day1
+```
+
+## Google ADK module
+### _`google.adk.agents.` Class_
+- name : 에이전트 이름
+- model : 모델 구성 (`google.adk.models.~` 하단의 model 관련 class 객체)
+- instruction : 에이전트의 역할과 사용법을 명시. 멀티 에이전트인 경우 매우 중요한 속성이 될 수 있음
+- tools : 에이전트가 사용할 도구 (기타 에이전트, 외부 API 등)
+- output_key : 에이전트의 출력 결과를 저장할 key. 주로 멀티 에이전트에서 에이전트끼리 구분하기 위해 사용함
+
+### _`google.adk.models.` Class_
+
+### _`google.adk.tools.` Class_
+#### google_search
+
+### Multi Agent Architectures
+#### Coordinator Pattern (Orchestrator Pattern)
+- Workflow  
+![](images/architecture/coordinator.png)
+
+- Example source code  
+  - [day1b-multi-agent - coordinator](./day1/day1b-multi-agent.ipynb#coordinator-pattern-orchestrator-pattern)
+
+#### Sequential Workflows Pattern (Pipeline Pattern, Assembly Line Pattern)
+- Workflow  
+![](images/architecture/sequential.png)
+
+- Example source code  
+  - [day1b-multi-agent - sequential](./day1/day1b-multi-agent.ipynb#sequential-workflows-pattern-pipeline-pattern-assembly-line-pattern)
+
+#### Parallel Workflows Pattern (MapReduce Pattern)
+- Workflow  
+![](images/architecture/parallel.png)
+
+- Example source code  
+  - [day1b-multi-agent - parallel](./day1/day1b-multi-agent.ipynb#parallel-workflows-pattern)
+
+#### Loop Workflows Pattern (Loop Pattern)
+- Workflow  
+![](images/architecture/loop.png)
+
+- Example source code  
+  - [day1b-multi-agent - loop](./day1/day1b-multi-agent.ipynb#loop-workflows-pattern)
