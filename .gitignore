@@ -1,0 +1,14 @@
+.env
+
+.adk/
+*.db
+
+# IDE
+.idea
+.vscode
+
+# OS
+.DS_Store
+
+# Build
+_build

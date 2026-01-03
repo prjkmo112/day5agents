@@ -1,0 +1,12 @@
+[project]
+name = "day5agents"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "ghp-import>=2.1.0",
+    "google-adk>=1.21.0",
+    "ipykernel>=7.1.0",
+    "jupyter-book>=2.1.0",
+    "python-dotenv>=1.2.1",
+]
