@@ -50,33 +50,39 @@ adk web day1
 ### _`google.adk.models.` Class_
 
 ### _`google.adk.tools.` Class_
-#### google_search
+- google_search
 
+---
 ### Multi Agent Architectures
 #### Coordinator Pattern (Orchestrator Pattern)
-- Workflow  
+- **Workflow**
+
 ![](images/architecture/coordinator.png)
 
-- Example source code  
+- **Example source code**  
   - [day1b-multi-agent - coordinator](./day1/day1b-multi-agent.ipynb#coordinator-pattern-orchestrator-pattern)
-
+---
 #### Sequential Workflows Pattern (Pipeline Pattern, Assembly Line Pattern)
-- Workflow  
+- **Workflow**
+
 ![](images/architecture/sequential.png)
 
-- Example source code  
+- **Example source code**  
   - [day1b-multi-agent - sequential](./day1/day1b-multi-agent.ipynb#sequential-workflows-pattern-pipeline-pattern-assembly-line-pattern)
-
+---
 #### Parallel Workflows Pattern (MapReduce Pattern)
-- Workflow  
+- **Workflow**
+
 ![](images/architecture/parallel.png)
 
-- Example source code  
+- **Example source code**  
   - [day1b-multi-agent - parallel](./day1/day1b-multi-agent.ipynb#parallel-workflows-pattern)
-
+---
 #### Loop Workflows Pattern (Loop Pattern)
-- Workflow  
+- **Workflow**
+
 ![](images/architecture/loop.png)
 
-- Example source code  
+- **Example source code**  
   - [day1b-multi-agent - loop](./day1/day1b-multi-agent.ipynb#loop-workflows-pattern)
+---
