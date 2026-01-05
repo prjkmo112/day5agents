@@ -13,8 +13,6 @@ async def main():
 
     print(response)
 
-    await asyncio.sleep(1)
-
     return response
 
 if __name__ == "__main__":
