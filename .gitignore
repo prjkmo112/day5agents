@@ -12,3 +12,10 @@
 
 # Build
 _build
+
+# Code - Python
+__pycache__/
+
+# Code - etc
+.fastembed_cache/
+
