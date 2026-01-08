@@ -1,0 +1,3 @@
+[submodule "deepdive/adk_litellm/ddgs"]
+	path = deepdive/adk_litellm/ddgs
+	url = https://github.com/deedy5/ddgs
