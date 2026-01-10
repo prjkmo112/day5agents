@@ -1,6 +1,5 @@
 import dotenv
 from google.adk.agents.llm_agent import Agent
-from google.adk.tools import ToolContext
 from google.adk.tools.mcp_tool import MCPToolset, StdioConnectionParams
 from mcp import StdioServerParameters
 
