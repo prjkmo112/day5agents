@@ -2,29 +2,6 @@ Reference - https://www.kaggle.com/learn-guide/5-day-agents
 
 Note - https://prjkmo112.github.io/day5agents/
 
----
-# Google 5 Day Agents Challenge
-## Day 1
-
-### First Agent with ADK
-#### Source Code
-- [Kaggle Link](https://www.kaggle.com/code/kaggle5daysofai/day-1a-from-prompt-to-action)
-- [Local Ipynb](./day1/day1a-single-agent.ipynb)
-
-### Multi-Agent Systems & Workflow Pattern
-
-|          | Single Agent                     | Multi Agent            |
-|----------|----------------------------------|------------------------|
-| 복잡도      | **낮음** : 디버깅, 개발, 관리가 쉬움  | **높음**                |
-| 비용      | 쌈                               | 비쌈                    |
-| Workflow | 순차적인 작업 수행                   | 병렬 작업 수행               |
-| Use Case | 개발, 테스트, 디버깅                 | 복잡한 시나리오, 대규모 프로젝트 |
-| 정확도     | 복잡한 작업 시 halluciation 위험도 높음| 높은 성능 기대할 수 있음      |
-
-#### Source Code
-- [Kaggle Link](https://www.kaggle.com/code/kaggle5daysofai/day-1b-agent-architectures)
-- [Local Ipynb](./day1/day1b-multi-agent.ipynb)
-
 # How to use Google ADK
 
 ## CLI
@@ -86,3 +63,25 @@ adk web day1
 - **Example source code**  
   - [day1b-multi-agent - loop](./day1/day1b-multi-agent.ipynb#loop-workflows-pattern)
 ---
+
+# Google 5 Day Agents Challenge
+## Day 1
+
+### First Agent with ADK
+#### Source Code
+- [Kaggle Link](https://www.kaggle.com/code/kaggle5daysofai/day-1a-from-prompt-to-action)
+- [Local Ipynb](./day1/day1a-single-agent.ipynb)
+
+### Multi-Agent Systems & Workflow Pattern
+
+|          | Single Agent                     | Multi Agent            |
+|----------|----------------------------------|------------------------|
+| 복잡도      | **낮음** : 디버깅, 개발, 관리가 쉬움  | **높음**                |
+| 비용      | 쌈                               | 비쌈                    |
+| Workflow | 순차적인 작업 수행                   | 병렬 작업 수행               |
+| Use Case | 개발, 테스트, 디버깅                 | 복잡한 시나리오, 대규모 프로젝트 |
+| 정확도     | 복잡한 작업 시 halluciation 위험도 높음| 높은 성능 기대할 수 있음      |
+
+#### Source Code
+- [Kaggle Link](https://www.kaggle.com/code/kaggle5daysofai/day-1b-agent-architectures)
+- [Local Ipynb](./day1/day1b-multi-agent.ipynb)
