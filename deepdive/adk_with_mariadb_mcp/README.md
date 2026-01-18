@@ -1,5 +1,7 @@
 # ADK with MariaDB MCP
 
+https://github.com/prjkmo112/day5agents/tree/main/deepdive/adk_with_mariadb_mcp
+
 ## Resource
 - [Ollama - GPT OSS 20b](https://ollama.com/library/gpt-oss:20b)
 - [MariaDB MCP](https://github.com/MariaDB/mcp)
@@ -42,6 +44,8 @@ uv sync
    # MCP
    MCP_READ_ONLY=true
    MCP_MAX_POOL_SIZE=10
+   ```
+
 3. run server
 ```bash
 uv run src/server.py --transport sse --port 9001 
