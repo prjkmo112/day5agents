@@ -69,7 +69,7 @@ ADK Web의 실행결과를 보면
    - **Thoughts** `list_databases` tool 을 호출하여 DB 목록을 가져옴. (information_schema, test) 아마 test 아닐까 유추. `list_tables` 호출해야 함.
 4. MariaDB MCP 호출 ([`list_tables` tool](https://github.com/MariaDB/mcp/blob/60bad9ef8e2fc549501529bbbca052cead535b2c/src/server.py#L321))
    - **Thoughts** `list_tables` tool 을 호출하여 테이블 목록을 가져옴. (products) `execute_sql` 호출해야 함.
-5. MariaDB MCP 호출 ([`execute_sql` tool](https://github.com/MariaDB/mcp/blob/60bad9ef8e2fc549501529bbbca052cead535b2c/src/server.py#L452]))
+5. MariaDB MCP 호출 ([`execute_sql` tool](https://github.com/MariaDB/mcp/blob/60bad9ef8e2fc549501529bbbca052cead535b2c/src/server.py#L452))
    - **Thoughts** `execute_sql` tool 을 호출하여 SQL 을 실행함. (SELECT COUNT(*) AS product_count FROM products;) 결과를 가져옴.
 6. 응답. (There are 20 products in the database.)
 
