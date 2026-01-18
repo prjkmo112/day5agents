@@ -27,7 +27,21 @@ cd mariadb-mcp
 uv lock
 uv sync
 ```
-2. set .env
+2. create and set up `.env`
+
+   Create a file named `.env` in the `mariadb-mcp` directory and configure the connection
+   details for the MariaDB instance started with Docker Compose, for example:
+
+   ```dotenv
+   # DB
+   DB_HOST=localhost
+   DB_PORT=3306
+   DB_USER=user
+   DB_PASSWORD=passwd
+  
+   # MCP
+   MCP_READ_ONLY=true
+   MCP_MAX_POOL_SIZE=10
 3. run server
 ```bash
 uv run src/server.py --transport sse --port 9001 
