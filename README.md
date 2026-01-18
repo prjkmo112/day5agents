@@ -2,19 +2,6 @@ Reference - https://www.kaggle.com/learn-guide/5-day-agents
 
 Note - https://prjkmo112.github.io/day5agents/
 
-- [How to use Google ADK](#how-to-use-google-adk)
-  - [CLI](#cli)
-  - [Google ADK module](#google-adk-module)
-- [Multi Agent Architectures](#multi-agent-architectures)
-  - [Coordinator Pattern (Orchestrator Pattern)](#coordinator-pattern-orchestrator-pattern)
-  - [Sequential Workflows Pattern (Pipeline Pattern, Assembly Line Pattern)](#sequential-workflows-pattern-pipeline-pattern-assembly-line-pattern)
-  - [Parallel Workflows Pattern (MapReduce Pattern)](#parallel-workflows-pattern-mapreduce-pattern)
-  - [Loop Workflows Pattern (Loop Pattern)](#loop-workflows-pattern-loop-pattern)
-- [Google 5 Day Agents Challenge](#google-5-day-agents-challenge)
-  - [Day 1](#day-1)
-    - [First Agent with ADK](#first-agent-with-adk)
-    - [Multi-Agent Systems & Workflow Pattern](#multi-agent-systems--workflow-pattern)
-
 # How to use Google ADK
 
 ## CLI

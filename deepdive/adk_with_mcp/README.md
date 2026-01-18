@@ -1,4 +1,7 @@
 # ADK with MCP
+
+https://github.com/prjkmo112/day5agents/tree/main/deepdive/adk_litellm
+
 외부 MCP 를 도구로써 사용하는 ADK 를 구현
 
 ## Use HugeIcons MCP
