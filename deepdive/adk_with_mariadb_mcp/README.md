@@ -49,7 +49,7 @@ ADK Web의 실행결과를 보면
     - **Thoughts** `상품이 몇 개 있는가`라는 사용자의 질문으로부터 DB 와 연관성을 유추해냈고 mariadb_agent 가 이 작업을 할 수 있음을 알아냈음.  
       따라서 mariadb agent 로 전환해야겠다는 결과를 도출함.
 2. MariaDB Agent 의 판단
-   - **Thoughts** 상품의 갯수를 파악하기 위해 DB 의 row count 를 가져와야 함을 알았음.  
+   - **Thoughts** 상품의 개수를 파악하기 위해 DB 의 row count 를 가져와야 함을 알았음.  
       하지만 DB, table 을 모름. 이에 `list_databases`, `list_tables` 호출을 순차적으로 호출해야 함까지 파악함. 
 3. MariaDB MCP 호출 ([`list_databases` tool](https://github.com/MariaDB/mcp/blob/60bad9ef8e2fc549501529bbbca052cead535b2c/src/server.py#L308))
    - **Thoughts** `list_databases` tool 을 호출하여 DB 목록을 가져옴. (information_schema, test) 아마 test 아닐까 유추. `list_tables` 호출해야 함.
